@@ -1,0 +1,176 @@
+
+// COLORS
+
+$primary: #00263A;
+$secondary: #86704D;
+$terciary: #3C3C3B;
+
+.gold {
+    color: $secondary;
+}
+
+.gray {
+    color: $terciary;
+}
+
+.bg-gray {
+    background-color: $terciary;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+body{
+    background: rgb(214,214,214);
+    background: linear-gradient(270deg, rgba(214,214,214,0.5) 50%, rgba(255,255,255,1) 100%);
+}
+
+
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,400;0,900;1,700;1,800&display=swap');
+
+$font-family-sans-serif: 'Asap', sans-serif;
+$font-family-playfair: 'Playfair Display', serif;
+$font-family-playfairSC: 'Playfair Display SC', serif;
+$font-family-asapCondensed: 'Asap Condensed', sans-serif;
+
+.font-asap {
+    font-family: $font-family-sans-serif;
+}
+
+.font-asap-semibold {
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+}
+
+.font-playfair {
+    font-family: $font-family-playfair;
+}
+
+.font-playfairSC {
+    font-family: $font-family-playfairSC;
+}
+
+.font-asap-cond {
+    font-family: $font-family-asapCondensed;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.logo-escudo {
+    width: 65px;
+}
+
+.border-secondary {
+    border-color: $secondary !important;
+}
+
+h1 {
+    letter-spacing: 0.15rem;
+}
+
+a {
+    color: white;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: rgb(122, 121, 121);
+    transition: all .3s ease;
+}
+
+.accordion-button {
+    color: $secondary;
+    padding: 1.8rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+button {
+    font-family: $font-family-sans-serif;
+    box-shadow: none;
+}
+
+.accordion-button::after, 
+.accordion-button:not(.collapsed)::after {
+    background-image: url(assets/flecha_gold.svg);
+}
+
+.accordion-button:not(.collapsed) {
+    color: $secondary;
+    background-color: white;
+    box-shadow: none;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-body {
+    font-family: $font-family-sans-serif;
+    color: $primary;
+}
+
+.iconos {
+    width: 50px;
+}
+
+.titulos-protocolo {
+    margin-top: -1.2rem;
+
+}
+
+.iconos-protocolo {
+    height: 70px;
+}
+
+.text-indent {
+    text-indent: 20px;
+}
+
+ li::marker {
+    color: $secondary;
+}
+
+.letter-spacing-005 {
+    letter-spacing: 0.05rem;
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    body{
+        background: rgb(214,214,214);
+        background: linear-gradient(270deg, rgba(214,214,214,0.5) 0%, rgba(255,255,255,1) 50%);
+    }
+
+    .logo-escudo {
+        width: 40px;
+    }   
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .w-100-xs {
+        width: 100%;
+    }
+
+    .accordion-button {
+        font-size: 1.2rem;
+    }
+
+    .iconos {
+        width: 40px;
+    }
+
+}
